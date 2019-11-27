@@ -18,3 +18,5 @@ for (i in seq_new){
 
 rev_comp <- rev(comp)
 rev_comp_new <- paste0(rev_comp, collapse = "")
+
+print (rev_comp_new)
