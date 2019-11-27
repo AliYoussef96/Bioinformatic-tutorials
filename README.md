@@ -1,4 +1,4 @@
-# Bioinformatic-tutorials
+# Bioinformatică tutorials
 
 ## 1.Reverse Complement Problem
 
