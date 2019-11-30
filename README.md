@@ -24,7 +24,7 @@ rev_comp_new <- paste0(rev_comp, collapse = "")
 
 print (rev_comp_new)
 ```
-## Counting Words Problem
+## 2.Counting Words Problem
 
 ```R
 seq <- "TTTATTT"
