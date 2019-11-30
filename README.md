@@ -24,3 +24,11 @@ rev_comp_new <- paste0(rev_comp, collapse = "")
 
 print (rev_comp_new)
 ```
+## Counting Words Problem
+
+```R
+seq <- "TTTATTT"
+k_mer <- gregexpr("(?=TT)" , seq, perl = TRUE)
+result <- k_mer[[1]]
+length(result)
+```
