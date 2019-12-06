@@ -1,9 +1,7 @@
 # Pattern Matching Problem
 
-
-
 library("seqinr")
-genome <- read.fasta(file = "/home/ali/Nermen_bioinfo_courses/youtube/data/vibrio_cholerae.fasta",
+genome <- read.fasta(file = "vibrio_cholerae.fasta",
                      as.string = TRUE)
 
 genome1 <- as.character(genome$NC_002505.1)
