@@ -56,13 +56,12 @@ genome <- read.fasta(file = "vibrio_cholerae.fasta",
 genome1 <- as.character(genome$NC_002505.1)
 genome2 <- as.character(genome$NC_002506.1)
 
-library("Biostrings")
-genome1 <- DNAString(genome1)
-genome2 <- DNAString(genome2)
+genome1 <- toupper(genome1)
+genome2 <- toupper(genome2)
 
-pattern1 <- matchPattern('ATGATCAAG', genome1)
-pattern1@ranges@start
+k_mer1 <- gregexpr("(?=ATGATCAAG)" , genome1, perl = TRUE)
+k_mer2 <- gregexpr("(?=ATGATCAAG)" , genome2, perl = TRUE)
 
-pattern2 <- matchPattern('ATGATCAAG', genome2)
-pattern2@ranges@start
+result1 <- k_mer1[[1]]
+result2 <- k_mer1[[1]]
 ```
