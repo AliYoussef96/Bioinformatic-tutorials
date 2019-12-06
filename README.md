@@ -63,5 +63,5 @@ k_mer1 <- gregexpr("(?=ATGATCAAG)" , genome1, perl = TRUE)
 k_mer2 <- gregexpr("(?=ATGATCAAG)" , genome2, perl = TRUE)
 
 result1 <- k_mer1[[1]]
-result2 <- k_mer1[[1]]
+result2 <- k_mer2[[1]]
 ```
