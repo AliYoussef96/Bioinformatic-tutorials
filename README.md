@@ -48,9 +48,6 @@ df_count$all_sub_string[df_count$Freq == max(df_count$Freq)]
 ```
 ## 4. Pattern Matching Problem
 
-
-# Pattern Matching Problem
-
 ```R
 library("seqinr")
 genome <- read.fasta(file = "vibrio_cholerae.fasta",
